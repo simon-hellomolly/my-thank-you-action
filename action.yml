@@ -1,0 +1,15 @@
+name: "Thank You Action"
+description: "A GitHub Action to thank contributors to your repository."
+author: "Simon Colman"
+
+inputs:
+  GITHUB_TOKEN:
+    description: "The GitHub token to use for authentication."
+    required: true
+  TENOR_TOKEN:
+    description: "Tenor API token"
+    required: true
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
